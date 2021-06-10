@@ -34,44 +34,13 @@ function only(ending, list, all){
     let length = list.length,
         sel=selector.value;
     clear_all();
-    console.log(list[i][sel]);
     for(let i = 0 ; i < length; i++){
         if (list[i][sel].endsWith(ending)==true || all!=undefined){
-            let added=document.createElement("p");
-            added.innerText=list[i].email;
-            email.appendChild(added);
-        }
-    }
-
-    for(let i = 0 ; i < length; i++){
-        if (list[i][sel].endsWith(ending)==true || all!=undefined){
-            let added=document.createElement("p");
-            added.innerText=list[i].age;
-            age.appendChild(added);
-        }
-    }
-
-    for(let i = 0 ; i < length; i++){
-        if (list[i][sel].endsWith(ending)==true || all!=undefined){
-            let added=document.createElement("p");
-            added.innerText=list[i].name;
-            sname.appendChild(added);
-        }
-    }
-
-    for(let i = 0 ; i < length; i++){
-        if (list[i][sel].endsWith(ending)==true || all!=undefined){
-            let added=document.createElement("p");
-            added.innerText=list[i].gender;
-            gender.appendChild(added);
-        }
-    }
-
-    for(let i = 0 ; i < length; i++){
-        if (list[i][sel].endsWith(ending)==true || all!=undefined){
-            let added=document.createElement("p");
-            added.innerText=list[i].social[0].url;
-            social.appendChild(added);
+            email.appendChild(document.createElement("p")).innerText=list[i].email;
+            age.appendChild(document.createElement("p")).innerText=list[i].age;
+            sname.appendChild(document.createElement("p")).innerText=list[i].name;
+            gender.appendChild(document.createElement("p")).innerText=list[i].gender;
+            social.appendChild(document.createElement("p")).innerText=[list[i].social[0].url, list[i].social[1].url];
         }
     }
     console.log(ending);
