@@ -4,9 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <title>Document</title>
 </head>
-<body>
-    
+<body class="flex column centerX">
+    <h1>CRUD JS</h1>
+    <div div class="flex row centerY sp-even col90">
+        <div class="flex column">
+            <p>Name:</p>
+            <input id="name" type="text">
+        </div>
+        <div class="flex column">
+            <p>Last Name:</p>
+            <input id="lastname" type="text">
+        </div>
+        <div class="flex column">
+            <p>E-mail:</p>
+            <input id="email" type="text">
+        </div class="flex column">
+    </div>
+    <button id="save">Save changes</button>
+    <div class="col90">
+        <table id="table">
+            <tr id="header">
+                <th>Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Options</th>
+            </tr>
+        </table>
+    </div>
 </body>
+<script src="./assets/js/script.js"></script>
 </html>

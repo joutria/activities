@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+table{
+    width: 100%;
+}
+
+table, th{
+    border: 0.2em solid black;
+}
+
+.flex{
+    display: flex;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.row{
+    flex-direction: row;
+}
+
+.centerX{
+    align-items: center;
+}
+
+.centerY{
+    justify-content: center;
+}
+
+.col90{
+    width: 90%;
+}
+
+.sp-even{
+    justify-content: space-evenly;
+}
+
+.sp-between{
+    justify-content: space-between;
+}
+
+#save{
+    width: 70%;
+    margin: 1em;
+    padding: 1em;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.edit, .delete{
+    width: 50%;
+}
