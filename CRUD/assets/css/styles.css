@@ -1,6 +1,17 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    position: relative;
+    padding: 1em;
+    background: linear-gradient(rgba(0, 222, 252, 0.75), rgba(255, 0, 255, 0.75));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
 }
 
 table{
@@ -9,6 +20,47 @@ table{
 
 table, th{
     border: 0.2em solid black;
+    border-radius: 1em;
+}
+
+input{
+    padding: 0.5em;
+    min-width: 15em;
+}
+
+.edit,
+.delete{
+    padding: 0.5em 0em;
+    font-weight: 900;
+    border-radius: 0.5em;
+    margin: 0.2em;
+    width: 45%;
+    opacity: 75%;
+    border: none;
+    transition: 0.25s;
+}
+
+.edit{
+    background-color: rgba(30, 224, 24, 1);
+}
+
+.delete{
+    background-color: rgba(224, 24, 24,1);
+    color: white;
+}
+
+.edit:hover,
+.edit:focus,
+.delete:hover,
+.delete:focus{
+    box-shadow: 0em 0em 0.2em black;
+    opacity: 100%;
+    transform: scale(1.1);
+}
+
+.editing{
+    background: rgba(0, 0, 0, 0.623);
+    color: white;
 }
 
 .flex{
@@ -44,13 +96,18 @@ table, th{
 }
 
 #save{
-    width: 70%;
+    width: 50%;
     margin: 1em;
     padding: 1em;
     font-size: 1rem;
-    font-weight: 900;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-shadow: 0em 0.15em rgba(179, 255, 0, 0.5);
+    border-radius: 1em;
+    background: linear-gradient(rgba(0, 222, 252, 0.75), rgba(255, 0, 255, 0.75));
+    transition: 0.25s;;
 }
 
-.edit, .delete{
-    width: 50%;
+#save:hover{
+    box-shadow: 0 0 0.5em;
 }
