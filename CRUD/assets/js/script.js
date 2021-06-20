@@ -1,8 +1,8 @@
 /* here I have the prototype */
 let user = [{
-    name: 'Example',
-    lastName: 'User',
-    email: 'eu@example.com'
+        name: 'Example',
+        lastName: 'User',
+        email: 'eu@example.com'
     },
     {
         name: 'User',
@@ -27,16 +27,19 @@ let editing=false;
 /* Local storage */
 let local = window.localStorage;
 
-if(local.length == 0){
-    console.log(local);
-    local.setItem('user', JSON.stringify(user));
-    console.log('example data set');
+function check_local(){
+    if(local.data == undefined){
+        console.log(local);
+        local.setItem('user', JSON.stringify(user));
+        console.log('example data set');
+    }
 }
 
 data = JSON.parse(local.getItem('user'));
 
 /* Load the table when the page loads */
 window.onload = function() {
+    check_local();
     rendertable();
 };
 
