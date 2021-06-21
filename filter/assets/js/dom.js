@@ -5,7 +5,6 @@ let body=document.querySelector("#container>.body"),
     sname=document.querySelector("#name"),
     age=document.querySelector("#age"),
     email=document.querySelector("#email"),
-    social=document.querySelector("#social"),
     gender=document.querySelector("#gender"),
     show=document.querySelector("#show"),
     selector=document.querySelector("#select");
@@ -40,7 +39,7 @@ function only(ending, list, all){
             age.appendChild(document.createElement("p")).innerText=list[i].age;
             sname.appendChild(document.createElement("p")).innerText=list[i].name;
             gender.appendChild(document.createElement("p")).innerText=list[i].gender;
-            social.appendChild(document.createElement("p")).innerText=[list[i].social[0].url, list[i].social[1].url];
+            social.appendChild(document.createElement("p")).innerText=`${list[i].social[0].url}`;
         }
     }
     console.log(ending);

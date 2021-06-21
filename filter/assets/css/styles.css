@@ -3,11 +3,31 @@
     margin: 0;
 }
 
+html, body{
+    height: 100%;
+}
+
 p{
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0.1em;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+.back-button{
+    position: relative;
+    margin: 0.5em;
+    min-width: 5em;
+    border-radius: 2em;
+    font-weight: bold;
+    background: white;
+    border: none;
+    transition: 0.25s;
+    z-index: 2;
 }
 
 #container{
@@ -37,7 +57,7 @@ p{
     flex-direction: column;
     width: 20%;
     min-height: 1em;
-    border: 0.2em solid rgb(107, 106, 106);
+    border: 0.2em ;
 }
 
 .head>button{
@@ -49,7 +69,6 @@ p{
     font-weight: 900;
     width: 100%;
     font-family: 'Courier New', Courier, monospace;
-    border: 0.25em black solid;
     background: white;
 }
 
@@ -72,14 +91,14 @@ p{
     background: white;
 }
 
-button{
-    position: relative;
-    margin: 0.5em;
-    min-width: 5em;
+.pulsing2::after{
+    position: absolute;
+    content: '';
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
     border-radius: 2em;
-    font-weight: bold;
-    background: rgba(255, 0, 0, 0.75);
-    border: none;
-    transition: 0.25s;
-    z-index: 2;
+    background-color: white;
+    z-index: -1;
 }
