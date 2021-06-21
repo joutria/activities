@@ -4,21 +4,23 @@ let body=document.querySelector("#container>.body"),
     input=document.querySelector("#input"),
     sname=document.querySelector("#name"),
     age=document.querySelector("#age"),
-    email=document.querySelector("#email"),
+    doors=document.querySelector("#doors"),
     gender=document.querySelector("#gender"),
     show=document.querySelector("#show"),
     selector=document.querySelector("#select");
 
+only("", cars, true);
+
 function clear_all() {
     sname.innerHTML='<p class="title">NAME</p>';
     age.innerHTML='<p class="title">AGE</p>';
-    email.innerHTML='<p class="title">E-MAIL</p>';
+    doors.innerHTML='<p class="title">E-MAIL</p>';
     social.innerHTML='<p class="title">SOCIAL</p>';
     gender.innerHTML='<p class="title">GENDER</p>';
 }
 
 show.addEventListener("click", function(){
-    only("", users, true);
+    only("", cars, true);
 });
 
 clear.addEventListener("click", function(){
@@ -26,7 +28,7 @@ clear.addEventListener("click", function(){
 });
 
 search.addEventListener("click", function(){
-    only(input.value, users, undefined);
+    only(input.value, cars, undefined);
 });
 
 function only(ending, list, all){
@@ -35,7 +37,7 @@ function only(ending, list, all){
     clear_all();
     for(let i = 0 ; i < length; i++){
         if (list[i][sel].endsWith(ending)==true || all!=undefined){
-            email.appendChild(document.createElement("p")).innerText=list[i].email;
+            doors.appendChild(document.createElement("p")).innerText=list[i].doors;
             age.appendChild(document.createElement("p")).innerText=list[i].age;
             sname.appendChild(document.createElement("p")).innerText=list[i].name;
             gender.appendChild(document.createElement("p")).innerText=list[i].gender;

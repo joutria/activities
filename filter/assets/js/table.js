@@ -1,8 +1,8 @@
-const users = [
+const cars = [
     {
         name: 'Erik',
         age: 29,
-        email: 'erik@academlo.com',
+        doors: 'erik@academlo.com',
         social: [
             { name: 'facebook', url: 'facebook/erik' },
             { name: 'twitter', url: 'twitter/erik' }
@@ -12,7 +12,7 @@ const users = [
     {
         name: 'Georg',
         age: 33,
-        email: 'georg@academlo.com',
+        doors: 'georg@academlo.com',
         social: [
             { name: 'facebook', url: 'facebook/georg' },
             { name: 'twitter', url: 'twitter/georg' }
@@ -22,7 +22,7 @@ const users = [
     {
         name: 'Andrea',
         age: 42,
-        email: 'andrea@hotmail.com',
+        doors: 'andrea@hotmail.com',
         social: [
             { name: 'facebook', url: 'facebook/andrea' },
             { name: 'twitter', url: 'twitter/andrea' }
@@ -32,7 +32,7 @@ const users = [
     {
         name: 'Oscar',
         age: 31,
-        email: 'oscar@academlo.com',
+        doors: 'oscar@academlo.com',
         social: [
             { name: 'facebook', url: 'facebook/oscar' },
             { name: 'twitter', url: 'twiter/oscar' }
@@ -42,7 +42,7 @@ const users = [
     {
         name: 'Daniela',
         age: 22,
-        email: 'andrea@uaq.mx',
+        doors: 'andrea@uaq.mx',
         social: [
             { name: 'facebook', url: 'facebook/andrea' },
             { name: 'twitter', url: 'twitter/andrea' }

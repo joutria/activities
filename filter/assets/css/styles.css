@@ -14,6 +14,11 @@ p{
     padding: 0.1em;
 }
 
+label{
+    margin: 1em;
+    font-weight: bold;
+}
+
 table{
     border-collapse: collapse;
 }
