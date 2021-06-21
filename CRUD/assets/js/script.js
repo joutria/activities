@@ -93,7 +93,7 @@ function loadbtn(){
     for(let i=0; i<deleter.length; i++){
         deleter[i].addEventListener('click', function(){
             data.splice(i,1);
-            local.setItem('user', JSON.stringify(data));
+            local.setItem('cars', JSON.stringify(data));
             clear();
             rendertable();
         });
