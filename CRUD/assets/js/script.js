@@ -26,26 +26,29 @@ let editing=false;
 
 /* Local storage */
 let local = window.localStorage;
+let data;
+check_local();
 
 function check_local(){
-    if(local.data == undefined){
-        console.log(local);
+    console.log('checking');
+    if(local.cars == undefined){
         local.setItem('cars', JSON.stringify(cars));
+        console.log(local);
+
         console.log('example data set');
     }
+    data = JSON.parse(local.getItem('cars'));
+    rendertable();
 }
 
-data = JSON.parse(local.getItem('cars'));
-rendertable();
-
 /* Load the table when the page loads */
-document.onload = function() {
+document.onload = async function() {
     check_local();
-    rendertable();
 };
 
 /* A function that iterates through the prototype array and adds the information in the table */
 function rendertable(){
+    console.log('rendering');
     let row;
     for(let i=0; i<data.length; i++){
         row=table.insertRow(i+1);
