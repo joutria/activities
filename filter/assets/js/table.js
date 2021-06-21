@@ -1,7 +1,7 @@
 const cars = [
     {
         name: 'Erik',
-        age: 29,
+        age: '29',
         doors: 'erik@academlo.com',
         social: [
             { name: 'facebook', url: 'facebook/erik' },
@@ -11,7 +11,7 @@ const cars = [
     },
     {
         name: 'Georg',
-        age: 33,
+        age: '33',
         doors: 'georg@academlo.com',
         social: [
             { name: 'facebook', url: 'facebook/georg' },
@@ -21,7 +21,7 @@ const cars = [
     },
     {
         name: 'Andrea',
-        age: 42,
+        age: '42',
         doors: 'andrea@hotmail.com',
         social: [
             { name: 'facebook', url: 'facebook/andrea' },
@@ -31,7 +31,7 @@ const cars = [
     },
     {
         name: 'Oscar',
-        age: 31,
+        age: '31',
         doors: 'oscar@academlo.com',
         social: [
             { name: 'facebook', url: 'facebook/oscar' },
@@ -41,7 +41,7 @@ const cars = [
     },
     {
         name: 'Daniela',
-        age: 22,
+        age: '22',
         doors: 'andrea@uaq.mx',
         social: [
             { name: 'facebook', url: 'facebook/andrea' },

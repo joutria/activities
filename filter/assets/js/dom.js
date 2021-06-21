@@ -20,7 +20,7 @@ function clear_all() {
 }
 
 show.addEventListener("click", function(){
-    only("", cars, true);
+    only('', cars, true);
 });
 
 clear.addEventListener("click", function(){
