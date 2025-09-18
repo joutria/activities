@@ -1,0 +1,70 @@
+/* =====================
+   Base Styles & Reset
+   ===================== */
+:root {
+  --primary: #f1292c;
+  --secondary: #25535f;
+  --white: #fff;
+  --black: #000;
+  --radius: 1.5em;
+  --transition: 0.25s;
+  --font-main: 'Segoe UI', Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-main);
+}
+
+html, body {
+  height: 100%;
+  background: var(--white);
+}
+
+/* =====================
+   Layout Utilities
+   ===================== */
+.flex { display: flex; }
+.column { flex-direction: column; }
+.row { flex-direction: row; }
+.centerX { align-items: center; }
+.centerY { justify-content: center; }
+.spacing { padding: 1em; }
+
+/* =====================
+   Buttons
+   ===================== */
+button, .btn {
+  position: relative;
+  margin: 0.5em;
+  min-width: 5em;
+  border-radius: var(--radius);
+  font-weight: bold;
+  background: var(--primary);
+  border: none;
+  transition: var(--transition);
+  z-index: 2;
+}
+button:hover, .btn:hover {
+  box-shadow: 0 0 0.5em var(--primary);
+  transform: scale(1.05);
+}
+
+/* =====================
+   Misc Utilities
+   ===================== */
+.white { background-color: var(--white); }
+
+.pulsing2::after {
+  position: absolute;
+  content: '';
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  border-radius: 2em;
+  background-color:rgba(241, 41, 44, 0.75);
+  z-index: -1;
+}

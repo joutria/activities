@@ -1,64 +1,42 @@
-*{
-    padding: 0;
-    margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
-}
+@import url('../../../assets/css/base.css');
 
-html, body{
-    height: 100%;
-}
-
+/* Section-specific styles for CRUD */
 body {
-    background: rgb(37, 83, 95);
+    background: white;
+    color: black;
 }
 
-h1{
+h1 {
     position: relative;
     padding: 1em;
-    background: linear-gradient(rgba(0, 222, 252, 1), rgba(255, 0, 255, 1));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
 }
 
-table{
+table {
     width: 100%;
-    background: black;
 }
 
-table, th, tr{
+table, th, tr {
     padding: 0.5em;
     border-radius: 1em 1em 0em 0em;
     text-align: center;
 }
 
-th{
-    border-bottom: 0.2em solid rgb(255, 255, 255);
+th {
+    border-bottom: 0.2em solid rgb(0, 0, 0);
 }
 
-input{
+input {
     padding: 0.5em;
     max-width: 12em;
     color: black;
 }
 
-.back-button{
-    position: relative;
-    margin: 0.5em;
-    min-width: 5em;
-    border-radius: 2em;
-    font-weight: bold;
+.back-button {
     color: black;
     background: white;
-    border: none;
-    transition: 0.25s;
-    z-index: 2;
 }
 
-.edit,
-.delete{
+.edit, .delete {
     padding: 0.5em 0em;
     font-weight: 900;
     border-radius: 0.5em;
@@ -67,98 +45,39 @@ input{
     border: none;
     transition: 0.25s;
 }
-
-.edit{
+.edit {
     background-color: rgb(9, 255, 0);
-    text-shadow: 0em 0em 0.1em rgb(0, 0, 0);
 }
-
-.delete{
+.delete {
     background-color: rgb(255, 0, 0);
-    text-shadow: 0em 0em 0.1em rgb(0, 0, 0);
 }
-
-.edit:hover,
-.edit:focus,
-.delete:hover,
-.delete:focus{
+.edit:hover, .edit:focus, .delete:hover, .delete:focus {
     box-shadow: 0em 0em 0.2em white;
     transform: scale(1.1);
 }
-
-.editing{
+.editing {
     background: rgba(255, 255, 255, 0.623);
     color: white;
 }
-
-.flex{
-    display: flex;
-}
-
-.column{
-    flex-direction: column;
-}
-
-.row{
-    flex-direction: row;
-}
-
-.centerX{
-    align-items: center;
-}
-
-.centerY{
-    justify-content: center;
-}
-
-.col90{
+.col90 {
     width: 90%;
 }
-
-.sp-even{
+.sp-even {
     justify-content: space-evenly;
 }
-
-.sp-between{
+.sp-between {
     justify-content: space-between;
 }
-
-#save{
+#save {
     width: 50%;
     margin: 1em;
     padding: 1em;
     font-size: 1rem;
     font-weight: bold;
     color: rgb(0, 0, 0);
-    text-shadow: 0em 0.15em rgba(228, 252, 173, 0.5);
     border-radius: 1em;
-    background: linear-gradient(rgba(0, 222, 252, 0.75), rgba(255, 0, 255, 0.75));
     transition: 0.25s;
 }
-
-#save:hover{
+#save:hover {
     box-shadow: 0 0 0.5em white;
-}
-
-.spacing{
-    padding: 1em;
-}
-
-.fixed{
-    position: fixed;
-    margin: 2em;
-    top: 0%;
-    left: 0%;
-}
-
-.pulsing2::after{
-    position: absolute;
-    content: '';
-    top: 0%;
-    left: 0%;
-    height: 100%;
-    width: 100%;
-    border-radius: 2em;
-    background-color:white;
-    z-index: -1;
 }

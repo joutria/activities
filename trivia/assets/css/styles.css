@@ -1,27 +1,22 @@
-*{
-    padding: 0;
-    margin: 0;
-    color: #000;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    --grad: rgb(255, 0, 221),rgb(255, 81, 81);
-    transition: 0.5s;
+@import url('../../../assets/css/base.css');
+
+/* Section-specific styles for trivia */
+:root {
+    --grad: rgb(255, 0, 221), rgb(255, 81, 81);
 }
 
-html,body,#dv { /* so that the #dv can fill up the page */
-    width:100%;
+html, body, #dv {
+    width: 100%;
 }
-
-body{
-    background: radial-gradient(var(--grad));
+body {
+    background: white;
 }
-
-label{
+label {
     font-size: 1.2rem;
     font-weight: bold;
-    margin: 0.25em;
+    margin: 0.25em 0 0 0.25em;
 }
-
-select{
+select {
     position: relative;
     width: 20em;
     padding: 1em 0.5em;
@@ -32,50 +27,30 @@ select{
     text-align: center;
     text-align-last: center;
 }
-
-option{
+option {
     font-size: 1rem;
 }
-
-button{
-    position: relative;
-    margin: 0.5em;
-    min-width: 5em;
-    border-radius: 2em;
-    font-weight: bold;
-    background: rgba(255, 0, 0, 0.75);
-    border: none;
-    transition: 0.25s;
-    z-index: 2;
-}
-
-td, th{
+td, th {
     padding: 0.5em;
-    text-align: center; 
+    text-align: center;
 }
-
-th{
+th {
     background: rgb(121, 218, 121);
     border-bottom: 0.2em solid rgb(0,0,0);
 }
-
-th:last-of-type{
+th:last-of-type {
     border-radius: 0 1em 0 0;
 }
-
-th:first-of-type{
+th:first-of-type {
     border-radius: 1em 0 0 0;
 }
-
-tr:nth-of-type(odd){
+tr:nth-of-type(odd) {
     background-color: #b9b9b9;
 }
-
-tr:last-of-type{
+tr:last-of-type {
     border-bottom: 0.2em solid rgb(0,0,0);
 }
-
-table{
+table {
     border-collapse: collapse;
     margin: 0.5em 0;
     font-size: 0.9rem;
@@ -83,17 +58,11 @@ table{
     box-shadow: 0 0 20px solid rgba(0, 0, 0, 0.15);
     min-width: 90%;
 }
-
-span{
+span {
     text-decoration: dotted;
     font-weight: bold;
 }
-
-label{
-    margin-top: 1em;
-}
-
-.container{
+.container {
     position: relative;
     padding: 1em;
     margin: 5em 0;
@@ -103,34 +72,10 @@ label{
     border-radius: 1em;
     box-shadow: 0 0 1em;
 }
-
-.show_number{
+.show_number {
     position: relative;
     top: 0%;
     left: 45.5%;
     font-weight: bold;
     transition: 0.1s;
-}
-
-.pulsing2::after{
-    position: absolute;
-    content: '';
-    top: 0%;
-    left: 0%;
-    height: 100%;
-    width: 100%;
-    border-radius: 2em;
-    background-color:rgba(241, 41, 44, 0.75);
-    z-index: -1;
-}
-
-.fixed{
-    position: fixed;
-    margin: 2em;
-    top: 0%;
-    left: 0%;
-}
-
-.fixed::after{
-    background: white;
 }
